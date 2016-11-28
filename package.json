@@ -1,0 +1,22 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm install express --save"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Tolulopes/afrokouture.git"
+  },
+  "author": "Tolu Shobande",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tolulopes/afrokouture/issues"
+  },
+  "homepage": "https://github.com/Tolulopes/afrokouture#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
