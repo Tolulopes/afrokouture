@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "serve": "nodemon ./app.js",
     "test": "npm install express --save"
   },
   "repository": {
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/Tolulopes/afrokouture#readme",
   "dependencies": {
     "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
