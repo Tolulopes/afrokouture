@@ -1,8 +1,8 @@
 {
-  "name": "myapp",
+  "name": "afrokouture",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "hair and makeup directory",
+  "main": "app.js",
   "scripts": {
     "serve": "nodemon ./app.js",
     "test": "npm install express --save"
@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Tolulopes/afrokouture#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "body-parser": "*",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.2"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"

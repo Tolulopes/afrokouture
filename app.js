@@ -1,32 +1,15 @@
 var express = require('express')
+var app = express();
+var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
-var app = express()
+mongoose.conect('mongodb://localhost/afrokouture');
 
-app.get('/', function (req, res) {
-  res.send('Hello World!')
-})
+var db = mongoose.connection;
 
-app.get('/user', function (req, res) {
-  res.json({ user: 'Tolu'});
-})
-
-//refresh browser get request
-
-app.post('/', function (req, res) {
-  res.send('Got a POST request')
-})
-
-// app.put('/user', function (req, res) {
-//   res.send('Got a PUTT requesedet at /user')
-// })
-
-// app.delete('/user', function (req, res) {
-//   res.send('Got a DELETE request at /user')
-// })
-//
-// app.get('/user', function (req, res) {
-//   res.send('Got a GET request at /user')
-// })
+app.get('/', function(req, res){
+  res.send('Hello');
+});
 
 app.listen(3000, function () {
   console.log('Example app 3000')
