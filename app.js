@@ -3,7 +3,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-mongoose.conect('mongodb://localhost/afrokouture');
+mongoose.connect('mongodb://localhost/afrokouture');
 
 var db = mongoose.connection;
 
