@@ -7,7 +7,7 @@ var AfrokoutureSchema = new Schema({
   specialism: String,
   description: String,
   contactDetails: String,
-  socialMedia: String,
+  socialMediaAccount: String,
   location: String,
   website: String,
 });

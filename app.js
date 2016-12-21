@@ -33,30 +33,32 @@ app.get('/api/stylists/name/:name', function(req, res){
 })
 
 app.post('/api/stylists', function(req, res){
-  var stylist = new Afrokouture(req.body);
+  var stylist = new Afrokouture({ name: 'dave' });
+  console.log('stylists',req);
 
   stylist.save(function(err, doc) {
     if (err) {
       res.error(err);
     } else {
       console.log('doc', doc);
-      res.send(doc);
+      res.json({ data: stylist });
     }
   })
 })
 
-app.put('/api/stylists', function(req, res){
-  var stylist = new Afrokouture(req.body);
-
-  stylist.save(function(err) {
-    if (err) {
-      res.error(err);
-    } else {
-      res.send();
-    }
-
-  })
-})
+// app.put('/api/stylists', function(req, res){
+//   var stylist = new Afrokouture(req.body);
+//   console.log('stylists',req.body);
+//
+//   stylist.save(function(err) {
+//     if (err) {
+//       res.error(err);
+//     } else {
+//       res.send();
+//     }
+//
+//   })
+// })
 
 app.listen(3000, function () {
   console.log('Example app 3000');
